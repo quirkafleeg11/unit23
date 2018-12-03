@@ -1,37 +1,58 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
 
-You can use the [editor on GitHub](https://github.com/quirkafleeg11/unit23/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to MyGrades</title>
+</head>
+<body>
+    <b><center><font size="24">Please login to MyGrades for Jamie Welch</font></center></b>
+    <center><html>
+<head>
+    <title>Login Page</title>
+</head>
+<body style="font-family:Arial;">
+    <form name="loginForm" method="post" action="login.php">
+        <table width="20%" bgcolor="ffffff" align="center">
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+            <tr>
+                <td colspan=2><center><font size=6><b>Login to MyGrades</b></font></center></td>
+            </tr>
 
-### Markdown
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" size=30 name="userid"></td>
+            </tr>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+            <tr>
+                <td>Password:</td>
+                <td><input type="Password" size=30 name="pwd"></td>
+            </tr>
 
-```markdown
-Syntax highlighted code block
+            <tr>
+                <td><input type="Reset"></td>
+                <td><input type="submit" onclick="return check(this.form)" value="Login"></td>
+            </tr>
 
-# Header 1
-## Header 2
-### Header 3
+        </table>
+    </form>
+    <script language="javascript">
+        function check(form) {
 
-- Bulleted
-- List
+            if (form.userid.value == "welch" && form.pwd.value == "hazel-rah") {
+                window.open('list.html')
+                return true;
+            }
+            else {
+                alert("That is incorrect. Please try again.")
+                return false;
+            }
+        }
+    </script>
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/quirkafleeg11/unit23/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+    <footer>MyGrades Version 1.0, made with love in London by Jamie Welch Freelance Web Development. All rights reserved.</footer>
+</body>
+</html></center>
+</body>
+</html>
